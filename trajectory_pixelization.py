@@ -6,6 +6,8 @@ Created on Fri Apr 12 17:19:29 2024
 @author: antoine
 """
 
+# pixelize vessel trajectories. output are save in categorical subfolders
+
 import os
 import numpy as np
 from scipy.interpolate import interp1d
@@ -25,7 +27,7 @@ def load_data():
 
 df = load_data()
 num_pixels = 128
-output_dir = "/home/antoine/Documents/python/whale/output"
+output_dir = "./output"
 
 
 # Step 1: Filter out categories with few samples
